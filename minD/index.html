@@ -2,15 +2,19 @@
 <html>
 	<head>
 		<title>Lightdm webki2 theme</title>
+		<link rel="stylesheet" href="./CSS/style.css">
 	</head>
 
-	<body id="bg" class="wrapper">
-		<form id="form">
-			<h1 id="username"></h1>
-			<input placeholder="password" id="password" type="password" required>
-			<select id="sessions"></select>
-			<input type="submit" value="Ingresar">
-		</form>
+	<body>
+		<div id="bg">
+			<form id="form">
+				<img id="userFace">
+				<p id="username"></p>
+				<input placeholder="password" id="password" type="password" required>
+				<select id="sessions"></select>
+				<input type="submit" value="Ingresar">
+			</form>
+		<div>
 		
 		<script src="./JS/main.js"></script>
 	</body>

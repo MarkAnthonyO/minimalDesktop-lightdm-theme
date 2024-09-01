@@ -1,9 +1,11 @@
+let img = document.getElementById('userFace');
 let username = document.getElementById('username');
 let bg = document.getElementById('bg');
 let password = document.getElementById('password');
 let sessions = document.getElementById('sessions');
 
 username.innerHTML = lightdm.users[0].name;
+img.src = lightdm.users[0].image;
 
 for(var session of lightdm.sessions) {
 	var opt = document.createElement('option');

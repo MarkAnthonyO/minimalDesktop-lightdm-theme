@@ -1,21 +1,51 @@
-#bg {
-	margin: auto;
+* {
+	padding: 0px;
+	margin: 0px;
 }
 
-#container {
-	width: 50vw;
+#bg {
+	width: 100vw;
+	height: 100vh;
+	background-color: #fff;
+}
+
+#form {
+	margin: auto;
 	background-color: #474747;
+	width: 30vw;
+	
+	border-width: 3px;
+	border-style: solid;
+	border-radius: 8px;
+	border-color: #fff;
+	
 	display: flex;
 	flex-direction: column;
-	
-	align-self: center;
 	align-items: center;
 }
 
-#userFace {
-	width: 25vw;
+#username {
+	color: #ffffff;
+	font-size: 2.2rem;
 }
 
-#users {
+#userFace {
+	width:20vw;
+	border-radius: 100%;
+}
+
+#password {
+	background-color: #474747;
+	color: #ffffff;
+	border-style: solid;
+}
+
+#password:focus {
+	background-color: #474747;
+	border: 0px solid #555;
+	outline: none;
+}
+
+#sessions {
 	background-color: #474747;
 }
