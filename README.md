@@ -1,0 +1,1 @@
+# minimalDesktop-lightdm-theme
