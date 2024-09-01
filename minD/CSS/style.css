@@ -1,0 +1,21 @@
+#bg {
+	margin: auto;
+}
+
+#container {
+	width: 50vw;
+	background-color: #474747;
+	display: flex;
+	flex-direction: column;
+	
+	align-self: center;
+	align-items: center;
+}
+
+#userFace {
+	width: 25vw;
+}
+
+#users {
+	background-color: #474747;
+}

@@ -1,0 +1,6 @@
+[theme]
+name=minD
+description=Minimal desktop theme
+engine=lightdm-webkit-greeter
+url=index.html
+session=openbox
