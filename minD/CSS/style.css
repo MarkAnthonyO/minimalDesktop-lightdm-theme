@@ -16,7 +16,7 @@
 	
 	border-width: 3px;
 	border-style: solid;
-	border-radius: 8px;
+	border-radius: 10px;
 	border-color: #fff;
 	
 	display: flex;
@@ -35,17 +35,32 @@
 }
 
 #password {
+	width: 25vw;
 	background-color: #474747;
 	color: #ffffff;
+	border-color: #ffffff;
+	border-width: 0px 0px 2px 0px;
+	font-size: 1em;
 	border-style: solid;
+	margin: 5px;
+	padding: 5px;
+	tab-index: 1;
 }
 
 #password:focus {
-	background-color: #474747;
-	border: 0px solid #555;
 	outline: none;
+	border-color: #ffb500;
 }
 
-#sessions {
+#session {
+	width: 25vw;
 	background-color: #474747;
+	color: #ffffff;
+	border-color: #ffffff;
+	border-width: 0px 0px 2px 0px;
+	font-size: 1em;
+	border-style: solid;
+	margin: 5px;
+	padding: 5px;
+	tab-index: 1;
 }
