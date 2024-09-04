@@ -1,0 +1,13 @@
+#all-users-view {
+	margin: auto;
+	background-color: #474747;
+	width: 30vw;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	border-style: solid;
+	border-color: #ffffff;
+	border-width: 3px;	
+}

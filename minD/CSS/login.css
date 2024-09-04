@@ -1,20 +1,4 @@
-* {
-	padding: 0px;
-	margin: 0px;
-}
-
-#bg {
-	width: 100vw;
-	height: 100vh;
-	background-color: #474747;
-	
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-#form {
+#login-form {
 	margin: auto;
 	background-color: #474747;
 	width: 30vw;
@@ -29,17 +13,18 @@
 	align-items: center;
 }
 
-#username {
+#login-username {
 	color: #ffffff;
 	font-size: 2.2rem;
 }
 
-#userFace {
+#login-userFace {
 	width:20vw;
 	border-radius: 100%;
+	margin: 10px;
 }
 
-#password {
+#login-password {
 	width: 25vw;
 	background-color: #474747;
 	color: #ffffff;
@@ -52,12 +37,12 @@
 	tab-index: 1;
 }
 
-#password:focus {
+#login-password:focus {
 	outline: none;
 	border-color: #ffb500;
 }
 
-#session {
+#login-session {
 	width: 25vw;
 	background-color: #474747;
 	color: #ffffff;
@@ -67,5 +52,20 @@
 	border-style: solid;
 	margin: 5px;
 	padding: 5px;
-	tab-index: 1;
+	tab-index: 2;
+	cursor: pointer;
+}
+
+#login-submit-button {
+	width: 25vw;
+	background-color: #474747;
+	border-style: solid;
+	font-size: 1em;
+	border-width: 2px;
+	color: #ffffff;
+	border-color: #ffffff;
+	border-radius: 10px;
+	margin: 5px;
+	padding: 5px;
+	cursor: pointer;
 }

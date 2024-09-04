@@ -1,0 +1,5 @@
+class UserChanger {
+	_init() {
+		
+	}
+}
