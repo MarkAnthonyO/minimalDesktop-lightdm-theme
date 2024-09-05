@@ -2,6 +2,7 @@ async function init() {
 	logger = new Logger();
 	session = new UserSession();
 	userProfile = new UserProfile();
+	userChanger = new UserChanger();
 	authentication = new Authentication();
 	login = new Login();
 	ui = new UI();

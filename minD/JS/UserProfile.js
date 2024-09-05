@@ -20,6 +20,15 @@ class UserProfile {
 	}
 	
 	get_face() {
-		return this._user.image;
+		let img;
+		
+		if(this._user.image == null) {
+			console.log("Is null");
+			img = "./src/user.png";
+		} else {
+			img = this._user.image;
+		}
+		
+		return img;
 	}
 }

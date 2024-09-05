@@ -1,13 +1,28 @@
 #all-users-view {
 	margin: auto;
-	background-color: #474747;
-	width: 30vw;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+#user-carousel {
+	background-color: #474747;
+	width: 100vw;
+	height: min-content;
 
 	border-style: solid;
 	border-color: #ffffff;
-	border-width: 3px;	
+	border-width: 3px 0px 3px 0px;
+	
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.user-selector {
+	width: 20vh;
+	border-radius: 20px;
+	margin: 5px;
 }
