@@ -1,11 +1,13 @@
 async function init() {
 	logger = new Logger();
-	session = new UserSession();
+	cache = new GreeterCache();
 	userProfile = new UserProfile();
 	userChanger = new UserChanger();
+	session = new UserSession();
 	authentication = new Authentication();
-	login = new Login();
+	
 	ui = new UI();
+	login = new Login();
 }
 
 

@@ -4,9 +4,9 @@ class UserSession {
 	}
 	
 	_init() {
-		this._actual_session = null;
+		this._actual_session = cache.get_last_session();
 		
-		if (lightdm.sessions.length == 1) {
+		if(this._actual_session == null) {
 			this.change_to(lightdm.sessions[0]);
 		}
 	}
@@ -14,6 +14,7 @@ class UserSession {
 	change_to(session) {
 		logger.show_message("Change to " + session.name + " session");
 		this._actual_session = session;
+		cache.set_last_session(session);
 	}
 	
 	get_name() {

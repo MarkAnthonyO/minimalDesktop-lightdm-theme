@@ -9,9 +9,11 @@ class UI {
 		
 		this.hide_all();
 		
-		if (lightdm.num_users > 1) {
+		if(cache.get_last_user() == null) {
 			this.show_all_users();
 		} else {
+			userProfile.change_to(cache.get_last_user());
+			cache.set_last_user(cache.get_last_user());
 			this.show_login_view();
 		}
 	}

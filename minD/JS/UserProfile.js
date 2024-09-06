@@ -5,10 +5,6 @@ class UserProfile {
 	
 	_init() {
 		this._user = null;
-		
-		if (lightdm.num_users == 1) {
-			this.change_to(lightdm.users[0]);
-		}
 	}
 	
 	change_to(user) {

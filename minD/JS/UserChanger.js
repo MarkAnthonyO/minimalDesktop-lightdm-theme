@@ -20,7 +20,7 @@ class UserChanger {
 			
 			user_selector.className = "user-selector";
 			user_selector.id = id;
-			user_selector.addEventListener('click', this.change_to);
+			user_selector.addEventListener('click', this.change_to_user_from_selector);
 			
 			id++;
 			
@@ -29,8 +29,10 @@ class UserChanger {
 		}
 	}
 	
-	change_to(e) {
-		userProfile.change_to(lightdm.users[e.target.id]);
+	change_to_user_from_selector(e) {
+		let user = lightdm.users[e.target.id]
+		userProfile.change_to(user);
+		cache.set_last_user(user);
 		ui.hide_all();
 		ui.show_login_view();
 	}
