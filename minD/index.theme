@@ -4,6 +4,3 @@ description=Minimal desktop theme
 engine=lightdm-webkit-greeter
 url=index.html
 session=openbox
-
-[Icon Theme]
-Inherits=breeze_cursors
