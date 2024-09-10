@@ -1,4 +1,15 @@
 class GreeterCache {
+
+	get_last_background() {
+		let background = localStorage['last-background'];	
+		return background;
+	}
+
+	set_last_background(background) {
+		logger.show_message("Changing last background to:" + background);
+		localStorage['last-background'] = background;
+	}
+
 	get_last_user() {
 		let user = localStorage['last-user'];
 		

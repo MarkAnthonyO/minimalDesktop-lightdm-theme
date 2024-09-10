@@ -5,6 +5,7 @@ async function init() {
 	userChanger = new UserChanger();
 	session = new UserSession();
 	authentication = new Authentication();
+	background = new Background();
 	
 	ui = new UI();
 	login = new Login();
